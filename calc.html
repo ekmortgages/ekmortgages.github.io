@@ -66,6 +66,12 @@
         background-color: black;
     }
   </style>
+  <script>
+var myWindow;
+function openWin() {
+  myWindow = window.open(href="contact.html", "", "width=400, height=200");
+}
+</script>
    </head> 
    <!-- create table -->
    <body> 
@@ -111,7 +117,7 @@
 	<div class="social-media-block">					
 <h2 class="section-heading"></h2>
 					<ul class="social-media">
-						<li><a href="contact.html" target="_blank" class="tooltip"  title="CONTACT"><img src="logo.png"></i></a></li>
+						<li><a onclick="openWin()" href="contact.html" target="_blank" class="tooltip"  title="CONTACT"><img src="logo.png"></i></a></li>
 					</ul>
 				</div>  
 </html>   
