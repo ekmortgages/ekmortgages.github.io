@@ -36,7 +36,25 @@ tr:nth-child(even){background-color: }
 		@-webkit-keyframes blink { 50% { visibility: hidden; }}
 		        @keyframes blink { 50% { visibility: hidden; } 0%{     color: white;    }}
 	</style>
-					<style>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding:20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+			<style>
     body {
         height: 100%;
         margin: 0;
@@ -54,24 +72,45 @@ function openWin() {
 
 <body>
 </br>
-<center><h2><strong><font color="white">SAVING ACCOUNTS INTEREST RATE</font></strong></h2></center>
- <table id="table">
-<tr><td><center><p><a class="button secondary full" href="http://www.tdcanadatrust.com/products-services/banking/accounts/account-rates.jsp" target="_blank">TD</a></p></center></td>
-<td><center><p><a class="button secondary full" href="https://www.rbcroyalbank.com/accounts/compare-savings-accounts.html" target="_blank">RBC</a></p></center></td>
-<td><center><p><a class="button secondary full" href="https://www.cibc.com/en/personal-banking/bank-accounts/savings-accounts.html" target="_blank">CIBC</a></p></center></td></tr>
- </table>
-<table id="table">
-<tr><td><center><p><a class="button secondary full" href="https://www.bmo.com/main/personal/bank-accounts/savings-accounts/" target="_blank">BMO</a></p></center></td>
-<td><center><p><a class="button secondary full" href="https://www.scotiabank.com/ca/en/personal/bank-accounts/savings-accounts.html" target="_blank">SCOTIA</a></p></center></td></tr>
+<center><h2><strong><font color="white">SAVING ACCOUNTS</font></strong></h2></center>
+<div class="row">
+ 
+   <div class="column">
+    <a href="https://www.tdcanadatrust.com/products-services/banking/accounts/account-rates.jsp" target="blank"><img src="../img/tdbank.jpg" width="100%" height="50"></a>
+  </div>
+  <div class="column">
+   <a href="https://www.rbcroyalbank.com/accounts/compare-savings-accounts.html" target="blank"><img src="../img/rbc.jpg" width="100%" height="50"></a>
+  </div>
+   <div class="column">
+    <a href="https://www.bmo.com/main/personal/bank-accounts/savings-accounts/" target="blank"><img src="../img/bmo.jpg" width="100%" height="50"></a>
+  </div>
+  <div class="column">
+    <a href="https://www.scotiabank.com/ca/en/personal/bank-accounts/savings-accounts.html" target="blank"><img src="../img/scotia.jpg" width="100%" height="50"></a>
+  </div>
+  <div class="column">
+    <a href="https://www.cibc.com/en/personal-banking/bank-accounts/savings-accounts.html" target="blank"><img src="../img/cibc.jpg" width="100%" height="50"></a>
+  </div>
+ 
+  <div class="column">
+    <a href="https://www.capitalone.com/bank/savings-accounts/" target="blank"><img src="../img/capitalone.png" width="100%" height="50"></a>
+  </div>
+  <div class="column">
+    <a href="https://www.hsbc.ca/savings-accounts/" target="blank"><img src="../img/hsbc.png" width="100%" height="50"></a>
+  </div>
+  <div class="column">
+    <a href="https://www.tangerine.ca/en/products/saving/savings-accounts/" target="blank"><img src="../img/tangerine.png" width="100%" height="50"></a>
+  </div>
+   <div class="column">
+    <a href="https://www.nbc.ca/personal/savings-investments/accounts/high-interest.html" target="blank"><img src="../img/nbc.png" width="100%" height="50"></a>
+  </div>
+ </div>
 
- </table>
-
-
+	
 </body>
 <div class="social-media-block">					
 <h2 class="section-heading"></h2>
 					<ul class="social-media">
-					<li><a onclick="openWin()" href="contact.html" target="_blank" class="tooltip"  title="CONTACT"><img src="../img/logo.png"></i></a></li>
+						<li><a onclick="openWin()" href="contact.html" target="_blank" class="tooltip"  title="CONTACT"><img src="../img/logo.png"></i></a></li>
 					</ul>
 				</div>
 </html> 
