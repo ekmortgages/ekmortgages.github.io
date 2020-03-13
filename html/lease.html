@@ -12,31 +12,25 @@
 		<link rel="stylesheet" href="../css/normalize.css">
 		<link rel="stylesheet" href="../css/skin-silver.css">
 		<noscript><link rel="stylesheet" href="../css/no-js.css"></noscript>
-		
-		<style>
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 0px solid #ddd;
-}
-
-th, td {
-  text-align: left;
-  padding: 5px;
-}
-
-tr:nth-child(even){background-color: }color: white; 
-</style>
 <style>
-		.blink {
-		    -webkit-animation: blink 2s step-end infinite;
-		            animation: blink 2s step-end infinite;
-		}
-		@-webkit-keyframes blink { 50% { visibility: hidden; }}
-		        @keyframes blink { 50% { visibility: hidden; } 0%{     color: white;     }}
-	</style>
-				<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding:20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+		<style>
     body {
         height: 100%;
         margin: 0;
@@ -44,32 +38,35 @@ tr:nth-child(even){background-color: }color: white;
         background-color: black;
     }
   </style>
- <script>
+    <script>
 var myWindow;
 function openWin() {
-  myWindow = window.open(href="contact.html", "", "width=400, height=200");
+  myWindow = window.open(href="contact.html", "", "width=420, height=525");
 }
 </script>
 </head>
-
 <body>
+
 </br>
 <center><h2><strong><font color="white">LEASE AGREEMENTS</font></strong></h2></center>
+<div class="row">
+  <div class="column">
+    <a href="../pdf/lease.pdf" target="blank"><img src="../img/orea.jpg" width="100%" height="50"></a>
+  </div>
+  <div class="column">
+   <a href="../pdf/onlease.pdf" target="blank"><img src="../img/ontario.jpg" width="100%" height="50""></a>
+  </div>
+ <div class="column">
+   <a href="../pdf/ontariolease.pdf" target="blank"><img src="../img/ontarioo.jpg" width="100%" height="50""></a>
+  </div>
 
- <table id="table">
-<tr><td><center><p><a class="button secondary full" href="../pdf/lease.pdf" target="_blank">OREA</a></p></center></td>
-<td><center><p><a class="button secondary full" href="../pdf/ontariolease.pdf" target="_blank">ONTARIO</a></p></center></td></tr>
-
- </table>
-<table id="table">
-<tr><td><center><p><a class="button secondary full" href="../pdf/onlease.pdf" target="_blank">ONTARIO - FILLABLE AFTER DOWNLOAD </a></p></center></td></tr>
-</table>
+</div>
 
 </body>
 <div class="social-media-block">					
 <h2 class="section-heading"></h2>
 					<ul class="social-media">
-					<li><a onclick="openWin()" href="contact.html" target="_blank" class="tooltip"  title="CONTACT"><img src="../img/logo.png"></i></a></li>
+						<li><a onclick="openWin()" href="contact.html" target="_blank" class="tooltip"  title="CONTACT"><img src="../img/logo.png"></i></a></li>
 					</ul>
 				</div>
-</html> 
+</html>
